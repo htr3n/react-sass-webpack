@@ -1,0 +1,52 @@
+{
+  "name": "react-sass-webpack",
+  "packageManager": "yarn@3.6.0",
+  "description": "A project template for React 18, SASS built with Webpack 5",
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "7.22.5",
+    "@babel/preset-env": "7.22.5",
+    "@htr3n/common-prettier-config": "0.0.1",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "@types/jest": "29.5.2",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "5.60.1",
+    "@typescript-eslint/parser": "5.60.1",
+    "@webpack-cli/generators": "3.0.7",
+    "babel-loader": "9.1.2",
+    "css-loader": "6.8.1",
+    "eslint": "8.43.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.32.2",
+    "html-webpack-plugin": "^5.5.3",
+    "jest": "29.5.0",
+    "mini-css-extract-plugin": "2.7.6",
+    "prettier": "2.8.8",
+    "sass": "1.63.6",
+    "sass-loader": "13.3.2",
+    "source-map-loader": "4.0.1",
+    "style-loader": "3.3.3",
+    "ts-loader": "9.4.4",
+    "typescript": "5.1.6",
+    "webpack": "^5.88.0",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "4.15.1",
+    "workbox-webpack-plugin": "7.0.0"
+  },
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "start": "webpack serve --mode=development --node-env=development",
+    "format": "npx prettier --write .",
+    "lint": "npx eslint --fix 'src/**/*.{jsx,ts,tsx}'"
+  },
+  "prettier": "@htr3n/common-prettier-config",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
